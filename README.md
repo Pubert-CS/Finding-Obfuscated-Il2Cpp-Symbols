@@ -14,7 +14,7 @@ vs other games that strip those as well, which make it hard to find. As shown he
 This python script works on both versions, so how to do it is the same. I will be using IDA-Pro for this, but ghidra is roughly the same process.
 
 # quick info
-libunity.so (android) = unityplayer.dll (PC) (but you cant use the other file for the non obfuscated version, E.G you cant use a libunity and unityplayer, both have to be same platforms)
+libunity.so (android) = gameassembly.dll (PC) (but you cant use the other file for the non obfuscated version, E.G you cant use a libunity and unityplayer, both have to be same platforms)
 
 # Step 1
 
