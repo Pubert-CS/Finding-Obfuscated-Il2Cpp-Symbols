@@ -13,6 +13,9 @@ vs other games that strip those as well, which make it hard to find. As shown he
 
 This python script works on both versions, so how to do it is the same. I will be using IDA-Pro for this, but ghidra is roughly the same process.
 
+# quick info
+libunity.so (android) = gameassembly.dll (PC) (but you cant use the other file for the non obfuscated version, E.G you cant use a libunity and unityplayer, both have to be same platforms)
+
 # Step 1
 
 To start, open the libunity.so for the target game in your decompiler (if you're using ghidra, wait for it to fully finish analyzing)
@@ -40,7 +43,6 @@ if should bring you to a screen with the string, there should be only one xref, 
 decompile/get the pseudo code for the function, Ctrl+A and Ctrl+C the contents, and put that into bad.txt
 
 # Final step
-
 Now for the next step, you'll need to get the same Unity version's file but without anyhing obfuscated, a good github with every version is [MelonLoader.UnityDependencies](https://github.com/LavaGang/MelonLoader.UnityDependencies/releases). I use this and it comes in handy. You may also download the unity version yourself, build for your target device, and get the file from there.
 
 Repeat the same process for the decrypted file, but this time save the pseudo code in good.txt
@@ -54,3 +56,8 @@ and it should do it.
 The exported file with all the symbols should just be SymbolMap.json, here's what it should look like
 
 ![image](images/img5.png)
+
+# Credits 
+Credits to L on discord (for supplying me with fixed version)
+
+Credits to the w of a person named Pubert.CS (the original maker of the finding obfuscated symbols)
